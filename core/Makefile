@@ -1717,7 +1717,7 @@ ifneq ($(TARGET_UNIFIED_DEVICE),)
 endif
 
 ifneq ($(BLOCK_BASED_OTA),false)
-    $(INTERNAL_OTA_PACKAGE_TARGET): block_based := --block
+    $(INTERNAL_OTA_PACKAGE_TARGET): block_based :=
 endif
 
 NAMELESS_TARGET_PACKAGE := $(PRODUCT_OUT)/nameless-$(NAMELESS_VERSION).zip
